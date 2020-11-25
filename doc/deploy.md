@@ -35,3 +35,12 @@ git config --global user.email "XXXX@hogehoge.com"
 
 git clone https://github.com/mgorny/cpuid2cpuflags.git
 ```
+
+## nngs
+
+```shell
+cd /app/nngs
+ln -s ../mlrate mlrate
+./configure --prefix=$HOME/go/nngs/
+make install
+```
