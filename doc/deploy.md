@@ -4,12 +4,15 @@ nngs:
 
 ```shell
 # bash
+
 root@6385f416dec4:/# ls
 app  boot  etc   lib    lib64   media  opt   root  sbin  sys  usr
 bin  dev   home  lib32  libx32  mnt    proc  run   srv   tmp  var
+
 root@6385f416dec4:/# cd app
 root@6385f416dec4:/app# ls
 mlrate  nngs
+
 root@6385f416dec4:/app# cd mlrate
 root@6385f416dec4:/app/mlrate# ls
 CHANGES   circular.c  game.c   itime.c       mlr.c         pg.h      rdbm.h              sample-anchor.sh    weight.c
@@ -43,4 +46,8 @@ cd /app/nngs
 ln -s ../mlrate mlrate
 ./configure --prefix=$HOME/go/nngs/
 make install
+
+cd /app/mlrate
+mkdir src
+cp /app/mlrate/libmlr.a /app/mlrate/src/libmlr.a
 ```

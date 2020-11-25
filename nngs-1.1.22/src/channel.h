@@ -53,7 +53,8 @@ struct channel {
 	int *members;
 	} ;
 
-struct channel carray[MAX_CHANNELS];
+/* 2020-11-25 Comment out.
+ * struct channel carray[MAX_CHANNELS]; */
 
 void channel_init(void);
 int on_channel(int, int);
