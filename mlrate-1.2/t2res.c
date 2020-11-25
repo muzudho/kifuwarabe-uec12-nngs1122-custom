@@ -65,7 +65,7 @@ main(int argc, char **argv)
   error_init(argv);
 
   dates[0] = '\0';
-  opterr = 0;
+  int opterr = 0;
   while ((c = getopt(argc, argv, "d:h?")) != EOF)
     switch (c)
     {

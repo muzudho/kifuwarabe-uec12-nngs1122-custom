@@ -56,7 +56,7 @@ main(int argc, char **argv)
 
   day = time(NULL) / SECSPERDAY;
 
-  opterr = 0;
+  int opterr = 0;
   while ((c = getopt(argc, argv, "d:g:i:h?")) != EOF)
     switch (c)
     {

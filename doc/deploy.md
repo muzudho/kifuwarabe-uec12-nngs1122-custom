@@ -18,5 +18,20 @@ FILES     cmd.c       hdbm.c   list.h        mlrate.c      player.h  result.c   
 Makefile  cmd.h       hdbm.h   list_types.h  old2newres.c  rank.c    result.h            shash.c             xdbm.h
 README    error.c     ilog2.c  mkpackage.sh  oldresult.c   rank.h    rhistory.c          shash.h
 anchor.c  error.h     ilog2.h  mkrundir.sh   oldresult.h   rdbm.c    sample-anchor.conf  t2res.c
+
+# apt update
+# apt install -y git
+
 root@61636d9f1008:/app/mlrate# make
+
+
+```
+
+## git
+
+```shell
+git config --global user.name "XXXX"
+git config --global user.email "XXXX@hogehoge.com"
+
+git clone https://github.com/mgorny/cpuid2cpuflags.git
 ```

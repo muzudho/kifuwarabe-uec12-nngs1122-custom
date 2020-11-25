@@ -1,8 +1,11 @@
 from ubuntu:20.10
 
 RUN apt-get update && apt-get install -y \
+    automake \
     # make, gcc
-    build-essential
+    build-essential \
+    git \
+    vim
 
 COPY ./mlrate-1.2 /app/mlrate
 COPY ./nngs-1.1.22 /app/nngs

@@ -104,7 +104,7 @@ main(int argc, char **argv)
 
   error_init(argv);
 
-  opterr = 0;
+  int opterr = 0;
   while ((c = getopt(argc, argv, "v:h?")) != EOF)
     switch (c)
     {
