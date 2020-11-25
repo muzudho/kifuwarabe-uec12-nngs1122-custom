@@ -12,6 +12,8 @@ docker-compose up --build
 
 ## Documents
 
+* This repository.
+  * [deploy](./doc/deploy.md)
 * [Official page](https://nngs.sourceforge.io/)
   * [Biuld and run the server](https://nngs.sourceforge.io/src/README)
 * Help
