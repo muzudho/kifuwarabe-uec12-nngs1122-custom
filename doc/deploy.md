@@ -50,4 +50,14 @@ make install
 cd /app/mlrate
 mkdir src
 cp /app/mlrate/libmlr.a /app/mlrate/src/libmlr.a
+
+cd /app/nngs
+make install
+
+cd /root/go/nngs/bin
+./nngssrv
+
+# `Error opening logfile '/root/go/nngs/nngssrv/stats/logfile': 2(No such file or directory)`
+# といったエラーメッセージは出る。
 ```
+

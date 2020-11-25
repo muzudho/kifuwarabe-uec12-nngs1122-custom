@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     # make, gcc
     build-essential \
     git \
+    telnet \
     vim
 
 COPY ./mlrate-1.2 /app/mlrate

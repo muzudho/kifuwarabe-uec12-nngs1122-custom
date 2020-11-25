@@ -53,8 +53,11 @@ struct channel {
 	int *members;
 	} ;
 
-/* 2020-11-25 Comment out.
- * struct channel carray[MAX_CHANNELS]; */
+/*
+ * 2020-11-25 Add extern keyword.
+ * struct channel carray[MAX_CHANNELS];
+ */
+extern struct channel carray[MAX_CHANNELS];
 
 void channel_init(void);
 int on_channel(int, int);
