@@ -35,6 +35,14 @@
 #include "result.h"
 #include "cmd.h"
 
+/* 2020-11-25 Add --> */
+int getopt(int argc, char * const argv[],
+           const char *optstring);
+
+extern char *optarg;
+extern int optind, opterr, optopt;
+/* --> 2020-11-25 Add */
+
 #ifndef DEFAULT_MEAN_START
 #define DEFAULT_MEAN_START 26.5
 #endif
@@ -104,7 +112,7 @@ main(int argc, char **argv)
 
   error_init(argv);
 
-  int opterr = 0;
+  opterr = 0;
   while ((c = getopt(argc, argv, "v:h?")) != EOF)
     switch (c)
     {

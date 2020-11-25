@@ -24,3 +24,4 @@ docker-compose up --build
       * [Makefile.am](https://fut-nis.hatenadiary.jp/entry/20090624/1245849007)
       * [GNU autotools 入門 その 2](http://www.katsuster.net/index.php?arg_act=cmd_show_diary&arg_date=20151227&arg_range=1&arg_direction=0)
       * [Automakeでmakeする](http://www.02.246.ne.jp/~torutk/cxx/automake/automake.html)
+    * [GETOPT](https://linuxjm.osdn.jp/html/LDP_man-pages/man3/getopt.3.html)

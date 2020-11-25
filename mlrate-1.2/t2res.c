@@ -39,6 +39,14 @@
 #include <string.h>
 #include "error.h"
 
+/* 2020-11-25 Add --> */
+int getopt(int argc, char * const argv[],
+           const char *optstring);
+
+extern char *optarg;
+extern int optind, opterr, optopt;
+/* --> 2020-11-25 Add */
+
 #define INITSIZE     32
 #define BUFSIZE    1024
 #define DELIM    " \t\n\r"
@@ -65,7 +73,7 @@ main(int argc, char **argv)
   error_init(argv);
 
   dates[0] = '\0';
-  int opterr = 0;
+  opterr = 0;
   while ((c = getopt(argc, argv, "d:h?")) != EOF)
     switch (c)
     {

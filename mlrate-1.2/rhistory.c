@@ -39,6 +39,14 @@
 #undef xdbm_next
 #include "hdbm.h"
 
+/* 2020-11-25 Add --> */
+int getopt(int argc, char * const argv[],
+           const char *optstring);
+
+extern char *optarg;
+extern int optind, opterr, optopt;
+/* --> 2020-11-25 Add */
+
 #define USAGE "Usage: %s -i <rdbm>|-g <player>|-d <player> <hdbm>\n"
 
 #define SECSPERDAY (24 * 60 * 60)
@@ -56,7 +64,7 @@ main(int argc, char **argv)
 
   day = time(NULL) / SECSPERDAY;
 
-  int opterr = 0;
+  opterr = 0;
   while ((c = getopt(argc, argv, "d:g:i:h?")) != EOF)
     switch (c)
     {

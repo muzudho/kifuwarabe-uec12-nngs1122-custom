@@ -26,6 +26,14 @@
 #include "rdbm.h"
 #include "error.h"
 
+/* 2020-11-25 Add --> */
+int getopt(int argc, char * const argv[],
+           const char *optstring);
+
+extern char *optarg;
+extern int optind, opterr, optopt;
+/* --> 2020-11-25 Add */
+
 #define USAGE "%s -d <dbname> [-g name] [-r name] [-l]\n"
 
 int
@@ -39,7 +47,7 @@ main(int argc, char **argv)
 
   error_init(argv);
 
-  int opterr = 0;
+  opterr = 0;
   while ((c = getopt(argc, argv, "d:g:r:lh?")) != EOF)
     switch (c)
     {
