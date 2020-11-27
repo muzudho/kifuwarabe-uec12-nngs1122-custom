@@ -4,7 +4,7 @@
 
 ```shell
 # On Windows.
-set COMPOSE_PROJECT_NAME=Kifuwarabe_NNGS_Build1
+set COMPOSE_PROJECT_NAME=Kifuwarabe_NNGS_Build2
 set NNGS_GIT_USER_NAME=yourname
 set NNGS_GIT_USER_EMAIL=yourname@example.com
 

@@ -38,6 +38,9 @@ RUN ln -s ../mlrate mlrate
 RUN ./configure --prefix=$HOME/go/nngs/
 RUN make install
 
-# Run a NNGS
+# Script at launch
 COPY ./docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+
+# Log file
+WORKDIR /root/go/nngssrv/stats
+RUN touch logfile
