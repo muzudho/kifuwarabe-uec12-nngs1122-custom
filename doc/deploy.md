@@ -60,4 +60,3 @@ cd /root/go/nngs/bin
 # `Error opening logfile '/root/go/nngs/nngssrv/stats/logfile': 2(No such file or directory)`
 # といったエラーメッセージは出る。
 ```
-
