@@ -6,9 +6,14 @@ services:
     # 起動しっぱなしにします。
     tty: true
     
-#    expose:
+    environment:
+      # Git hub にアクセスできるユーザー名、Eメールを環境変数に指定してください。
+      - NNGS_GIT_USER_NAME
+      - NNGS_GIT_USER_EMAIL
+
+    expose:
 #      - "6969"
-#      - "9696"
-#    ports:
-#      - "6969:6969"
-#      - "9696:9696"
+      - "9696"
+    ports:
+      - "6969:6969"
+      - "9696:9696"
