@@ -4,9 +4,10 @@ RUN apt-get update && apt-get install -y \
     automake \
     # make, gcc
     build-essential \
-    git
-    # telnet \
-    # vim
+    git \
+    # The following is used for development.
+    telnet \
+    vim
 
 COPY ./mlrate-1.2 /app/mlrate
 COPY ./nngs-1.1.22 /app/nngs
@@ -43,4 +44,4 @@ COPY ./docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 # Log file
 WORKDIR /root/go/nngssrv/stats
-RUN touch logfile
+# RUN touch logfile
